@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/styles.css">
+  <script src="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/_ds_bundle.js"></script>
+  <script src="image-slot.js"></script>
+  <style>
+    body{margin:0}
+    a{color:var(--color-accent)}
+    a:hover{color:var(--color-accent-700)}
+    image-slot::part(frame){background:transparent}
+  </style>
+</helmet>
+
+<nav class="nav" style="max-width:1200px;margin:0 auto;padding-inline:clamp(20px,5vw,72px)">
+  <span class="nav-brand">Morris Kuang</span>
+  <a href="index.html" aria-current="page">Home</a>
+  <a href="Projects.dc.html">Projects</a>
+  <a href="About.dc.html">About</a>
+  <a class="btn btn-primary" href="resume.pdf" style="margin-left:12px">Résumé</a>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) clamp(48px,7vw,88px)">
+
+  <section style="display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center;padding:clamp(40px,6vw,80px) 0 clamp(36px,5vw,64px)">
+    <div>
+      <span class="tag tag-outline" style="margin-bottom:18px">Philadelphia, PA · Taipei, Taiwan</span>
+      <h1 style="font-size:clamp(38px,5.6vw,68px);line-height:1.03;letter-spacing:-0.01em;text-transform:uppercase;margin:18px 0 20px">I move events, then make them explain themselves.</h1>
+      <p style="font-size:17px;line-height:1.6;max-width:52ch;color:color-mix(in srgb, var(--color-text) 78%, transparent);margin:0 0 28px">
+        Streaming pipelines, analytical stores, and the diagnosis layer on top. Incoming <strong>MAS-CS at Penn</strong>, previously product at Yahoo and data at Delta Electronics. Open to data engineering and backend infrastructure internships for <strong>Summer 2027</strong>.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <a class="btn btn-primary" href="mailto:cwkuang@engineering.upenn.edu">Email me</a>
+        <a class="btn btn-secondary" href="https://github.com/morris0925" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-secondary" href="https://linkedin.com/in/morris-kuang" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secondary" href="Projects.dc.html">View projects</a>
+      </div>
+    </div>
+    <figure class="blueprint" style="margin:0;aspect-ratio:4/5;overflow:visible">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <image-slot id="home-portrait" shape="rect" placeholder="Portrait photo" src="assets/portrait.jpg" style="width:100%;height:100%"></image-slot>
+    </figure>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:32px">
+      <span class="tag tag-accent">01 · Featured work</span>
+      <h2 style="font-size:clamp(22px,2.6vw,28px);margin:0;text-transform:uppercase">Two systems worth a closer look</h2>
+      <span style="flex:1;height:1px;background:var(--color-divider)"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,32px)">
+      <div class="blueprint" style="padding:24px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span class="tag tag-accent">Project · 2026</span>
+        <h3 style="font-size:26px;margin:14px 0 8px;text-transform:uppercase">Down</h3>
+        <p style="margin:0 0 16px;opacity:.8">An LLM reads calendar screenshots and plain language into structured availability, so a group can land on a time without ten reply-all messages.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px">
+          <span class="tag tag-neutral">Next.js 14</span><span class="tag tag-neutral">Supabase</span><span class="tag tag-neutral">LLM APIs</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:baseline">
+          <a href="project-down.html" style="font-family:var(--font-heading);font-weight:600;font-size:14px;color:var(--color-accent-700);text-transform:uppercase;letter-spacing:.02em;text-decoration:none">Read the case study →</a>
+          <a href="https://github.com/Morris-Kuang/Down" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="blueprint" style="padding:24px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <span class="tag tag-accent">Project · 2026</span>
+        <h3 style="font-size:26px;margin:14px 0 8px;text-transform:uppercase">StreamLens</h3>
+        <p style="margin:0 0 16px;opacity:.8">A real-time Kafka pipeline lands GitHub events as Parquet and serves DuckDB queries while an agentic loop diagnoses anomalies as they arrive.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px">
+          <span class="tag tag-neutral">Kafka</span><span class="tag tag-neutral">DuckDB</span><span class="tag tag-neutral">RAG</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:baseline">
+          <a href="project-streamlens.html" style="font-family:var(--font-heading);font-weight:600;font-size:14px;color:var(--color-accent-700);text-transform:uppercase;letter-spacing:.02em;text-decoration:none">Read the case study →</a>
+          <a href="https://github.com/Morris-Kuang/GitHub-real-time-query-engine-over-live-data-streams" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:28px">
+      <span class="tag tag-accent-2">02 · Experience</span>
+      <h2 style="font-size:clamp(22px,2.6vw,28px);margin:0;text-transform:uppercase">Where the rest of the time went</h2>
+      <span style="flex:1;height:1px;background:var(--color-divider)"></span>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <div style="display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:16px 0;border-top:1px solid var(--color-divider)">
+        <div class="blueprint" style="width:56px;height:56px;padding:10px">
+          <image-slot id="logo-ntu" shape="rect" fit="contain" placeholder="NTU logo" src="assets/logo-ntu.png"></image-slot>
+        </div>
+        <div>
+          <h3 style="font-size:18px;margin:0 0 2px;text-transform:uppercase">National Taiwan University</h3>
+          <p style="margin:0;font-size:13.5px;color:color-mix(in srgb, var(--color-text) 65%, transparent)">Data Science Research Assistant</p>
+        </div>
+        <span style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent);white-space:nowrap">Sep 2025 – Mar 2026</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:16px 0;border-top:1px solid var(--color-divider)">
+        <div class="blueprint" style="width:56px;height:56px;padding:10px">
+          <image-slot id="logo-delta" shape="rect" fit="contain" placeholder="Delta Electronics logo" src="assets/logo-delta.png"></image-slot>
+        </div>
+        <div>
+          <h3 style="font-size:18px;margin:0 0 2px;text-transform:uppercase">Delta Electronics</h3>
+          <p style="margin:0;font-size:13.5px;color:color-mix(in srgb, var(--color-text) 65%, transparent)">Business Transformation Intern</p>
+        </div>
+        <span style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent);white-space:nowrap">Jul 2025 – Jan 2026</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:16px 0;border-top:1px solid var(--color-divider)">
+        <div class="blueprint" style="width:56px;height:56px;padding:10px">
+          <image-slot id="logo-yahoo" shape="rect" fit="contain" placeholder="Yahoo logo" src="assets/logo-yahoo.webp"></image-slot>
+        </div>
+        <div>
+          <h3 style="font-size:18px;margin:0 0 2px;text-transform:uppercase">Yahoo</h3>
+          <p style="margin:0;font-size:13.5px;color:color-mix(in srgb, var(--color-text) 65%, transparent)">Product Manager Intern</p>
+        </div>
+        <span style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent);white-space:nowrap">Jun 2024 – Aug 2024</span>
+      </div>
+      <div style="display:grid;grid-template-columns:56px 1fr auto;gap:18px;align-items:center;padding:16px 0;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">
+        <div class="blueprint" style="width:56px;height:56px;padding:10px">
+          <image-slot id="logo-bp" shape="rect" fit="contain" placeholder="BP logo" src="assets/logo-bp.webp"></image-slot>
+        </div>
+        <div>
+          <h3 style="font-size:18px;margin:0 0 2px;text-transform:uppercase">BP</h3>
+          <p style="margin:0;font-size:13.5px;color:color-mix(in srgb, var(--color-text) 65%, transparent)">Business Operations Intern</p>
+        </div>
+        <span style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent);white-space:nowrap">Jul 2023 – Aug 2023</span>
+      </div>
+    </div>
+    <p style="margin-top:16px"><a href="Projects.dc.html" style="font-family:var(--font-heading);font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">See the full history →</a></p>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:24px">
+      <span class="tag tag-accent">03 · Schema</span>
+      <h2 style="font-size:clamp(22px,2.6vw,28px);margin:0;text-transform:uppercase">What I work in</h2>
+      <span style="flex:1;height:1px;background:var(--color-divider)"></span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(16px,2.5vw,24px)">
+      <div class="blueprint" style="padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Languages</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-outline">Python</span><span class="tag tag-outline">Java</span><span class="tag tag-outline">C++</span><span class="tag tag-outline">SQL</span><span class="tag tag-outline">JavaScript / TypeScript</span>
+        </div>
+      </div>
+      <div class="blueprint" style="padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+          <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Systems &amp; data</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-outline">Kafka</span><span class="tag tag-outline">DuckDB</span><span class="tag tag-outline">Parquet</span><span class="tag tag-outline">PyArrow</span><span class="tag tag-outline">ETL pipelines</span><span class="tag tag-outline">Docker</span><span class="tag tag-outline">Unix / Linux</span>
+        </div>
+      </div>
+      <div class="blueprint" style="padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="0"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:color-mix(in srgb, var(--color-text) 70%, transparent)">Web &amp; backend</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-outline">Next.js</span><span class="tag tag-outline">Supabase</span><span class="tag tag-outline">REST APIs</span><span class="tag tag-outline">Git</span>
+        </div>
+      </div>
+      <div class="blueprint" style="padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M12 2a4 4 0 0 0-4 4v.5A3.5 3.5 0 0 0 4.5 10 3.5 3.5 0 0 0 3 16.9 4 4 0 0 0 6 22h12a4 4 0 0 0 3-6.1A3.5 3.5 0 0 0 19.5 10 3.5 3.5 0 0 0 16 6.5V6a4 4 0 0 0-4-4z"></path></svg>
+          <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:color-mix(in srgb, var(--color-text) 70%, transparent)">AI &amp; analytics</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-outline">LLM APIs</span><span class="tag tag-outline">RAG</span><span class="tag tag-outline">Pandas</span><span class="tag tag-outline">Selenium</span><span class="tag tag-outline">Power BI</span><span class="tag tag-outline">VBA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:24px">
+      <span class="tag tag-accent-2">04 · Education</span>
+      <h2 style="font-size:clamp(22px,2.6vw,28px);margin:0;text-transform:uppercase">Two degrees, one direction</h2>
+      <span style="flex:1;height:1px;background:var(--color-divider)"></span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="blueprint" style="display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:center;padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="blueprint" style="width:72px;height:72px;padding:12px">
+          <image-slot id="logo-upenn" shape="rect" fit="contain" placeholder="Penn crest" src="assets/logo-upenn.png"></image-slot>
+        </div>
+        <div>
+          <span class="card-kicker">Aug 2026 – May 2028 (expected) · Philadelphia, PA</span>
+          <h3 class="card-title" style="font-size:19px;margin-top:4px">University of Pennsylvania</h3>
+          <p class="card-body" style="margin-top:4px">Master of Applied Science, Computer Science<br>Software Development · Data Structures and Software Design · Computer Systems · Algorithms</p>
+        </div>
+      </div>
+      <div class="blueprint" style="display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:center;padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="blueprint" style="width:72px;height:72px;padding:12px">
+          <image-slot id="logo-ntu-edu" shape="rect" fit="contain" placeholder="NTU crest" src="assets/logo-ntu.png"></image-slot>
+        </div>
+        <div>
+          <span class="card-kicker">Sep 2021 – Jan 2026 · Taipei, Taiwan</span>
+          <h3 class="card-title" style="font-size:19px;margin-top:4px">National Taiwan University</h3>
+          <p class="card-body" style="margin-top:4px">B.B.A., Operations and Data Analytics<br>GPA 3.95 / 4.0 · Two-time Dean's List, top 5% of class</p>
+        </div>
+      </div>
+      <div class="blueprint" style="display:grid;grid-template-columns:72px 1fr;gap:20px;align-items:center;padding:20px">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div class="blueprint" style="width:72px;height:72px;padding:12px">
+          <image-slot id="logo-usc" shape="rect" fit="contain" placeholder="USC Marshall crest" src="assets/logo-usc.webp"></image-slot>
+        </div>
+        <div>
+          <span class="card-kicker">Dates · Location — fill in</span>
+          <h3 class="card-title" style="font-size:19px;margin-top:4px">USC Marshall School of Business</h3>
+          <p class="card-body" style="margin-top:4px">Program and highlights — let me know the details and I'll fill this in.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:clamp(40px,6vw,64px) 0 0;border-top:1px solid var(--color-divider);margin-top:clamp(16px,3vw,24px)">
+    <h2 style="font-size:clamp(28px,4.5vw,48px);text-transform:uppercase;margin:0 0 24px">Building something<br>that has to stay up?</h2>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px">
+      <a class="btn btn-primary" href="mailto:cwkuang@engineering.upenn.edu">cwkuang@engineering.upenn.edu</a>
+      <a class="btn btn-secondary" href="https://github.com/morris0925" target="_blank" rel="noopener">github.com/morris0925</a>
+      <a class="btn btn-secondary" href="https://linkedin.com/in/morris-kuang" target="_blank" rel="noopener">linkedin.com/in/morris-kuang</a>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--color-divider);padding-top:18px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent)">
+      <span>© 2026 Morris Kuang</span>
+      <span>Barlow Condensed · Barlow</span>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+</body>
+</html>

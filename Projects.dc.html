@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/styles.css">
+  <script src="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/_ds_bundle.js"></script>
+  <style>
+    body{margin:0}
+    a{color:var(--color-accent)}
+    a:hover{color:var(--color-accent-700)}
+  </style>
+</helmet>
+
+<nav class="nav" style="max-width:1200px;margin:0 auto;padding-inline:clamp(20px,5vw,72px)">
+  <span class="nav-brand">Morris Kuang</span>
+  <a href="index.html">Home</a>
+  <a href="Projects.dc.html" aria-current="page">Projects</a>
+  <a href="About.dc.html">About</a>
+  <a class="btn btn-primary" href="resume.pdf" style="margin-left:12px">Résumé</a>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) clamp(56px,7vw,96px)">
+
+  <section style="padding:clamp(40px,6vw,72px) 0 clamp(28px,4vw,40px)">
+    <span class="tag tag-outline" style="margin-bottom:18px">The log</span>
+    <h1 style="font-size:clamp(34px,5vw,56px);line-height:1.04;letter-spacing:-0.01em;text-transform:uppercase;margin:18px 0 16px">Projects, research and work, newest first.</h1>
+    <p style="font-size:16px;max-width:60ch;color:color-mix(in srgb, var(--color-text) 78%, transparent);margin:0">Six entries: two shipped systems with full case studies, and the research and internships that built the judgment behind them.</p>
+  </section>
+
+  <section style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,28px);padding-bottom:clamp(40px,6vw,64px)">
+
+    <div class="blueprint" style="grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding:28px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div>
+        <span class="tag tag-accent">0006 · Project</span>
+        <h2 style="font-size:28px;margin:14px 0 4px;text-transform:uppercase">Down</h2>
+        <p style="margin:0 0 14px;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:13px;letter-spacing:.04em">Founder · Jul 2026 – Present</p>
+        <ul style="margin:0 0 16px;padding-left:18px;max-width:70ch">
+          <li>Full-stack group scheduling app: an LLM parses calendar screenshots and plain language into structured availability, proposes times, and leaves the final pick to the group.</li>
+          <li>70+ organic visitors in week one, over half entering the event-creation flow.</li>
+          <li>User interviews turned into an integration roadmap led by Google Calendar.</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-neutral">Next.js 14</span><span class="tag tag-neutral">Supabase</span><span class="tag tag-neutral">Vercel</span><span class="tag tag-neutral">LLM APIs</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <a href="project-down.html" style="font-family:var(--font-heading);font-weight:600;font-size:14px;color:var(--color-accent-700);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;text-decoration:none">Read more →</a>
+        <a href="https://github.com/Morris-Kuang/Down" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;text-decoration:none">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="blueprint" style="grid-column:1/-1;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:start;padding:28px">
+      <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div>
+        <span class="tag tag-accent">0005 · Project</span>
+        <h2 style="font-size:28px;margin:14px 0 4px;text-transform:uppercase">StreamLens</h2>
+        <p style="margin:0 0 14px;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:13px;letter-spacing:.04em">Creator · May 2026 – Present</p>
+        <ul style="margin:0 0 16px;padding-left:18px;max-width:70ch">
+          <li>Real-time pipeline on Kafka ingesting live GitHub events, landed as Parquet through PyArrow, serving analytical queries in DuckDB over continuously arriving data.</li>
+          <li>Agentic diagnosis loop: a detected anomaly triggers RAG retrieval over DuckDB vector search, and an LLM ranks root-cause hypotheses with confidence labels.</li>
+          <li>Auto-ticketing stays deferred by design, keeping a human in the loop and bounding LLM cost and failure modes.</li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <span class="tag tag-neutral">Python</span><span class="tag tag-neutral">Kafka</span><span class="tag tag-neutral">DuckDB</span><span class="tag tag-neutral">Parquet</span><span class="tag tag-neutral">PyArrow</span><span class="tag tag-neutral">RAG</span>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end">
+        <a href="project-streamlens.html" style="font-family:var(--font-heading);font-weight:600;font-size:14px;color:var(--color-accent-700);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;text-decoration:none">Read more →</a>
+        <a href="https://github.com/Morris-Kuang/GitHub-real-time-query-engine-over-live-data-streams" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap;text-decoration:none">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-kicker">0004 · Research</span>
+      <h3 class="card-title" style="font-size:22px">National Taiwan University</h3>
+      <p style="margin:0;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:12.5px">Data Science Research Assistant · Advisor: Prof. Chen-Ting Lien · Sep 2025 – Mar 2026</p>
+      <ul class="card-body" style="padding-left:18px">
+        <li>Selenium scraping and LLM classification pipeline over 18,000+ corporate comment letters spanning 91 accounting changes, applying a lobbying-alignment framework from the literature.</li>
+        <li>Validated model output against human-coded letters at 80% directional agreement with zero contradictions.</li>
+        <li>Found statistically significant positive abnormal returns among aligned firms across a 1,000+ firm sample.</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span class="tag tag-neutral">Python</span><span class="tag tag-neutral">Selenium</span><span class="tag tag-neutral">LLM APIs</span><span class="tag tag-neutral">Pandas</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-kicker">0003 · Work</span>
+      <h3 class="card-title" style="font-size:22px">Delta Electronics</h3>
+      <p style="margin:0;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:12.5px">Business Transformation Intern, Corporate Operations Strategy · Jul 2025 – Jan 2026</p>
+      <ul class="card-body" style="padding-left:18px">
+        <li>Built ETL pipelines and Power BI dashboards monitoring 7,000+ global projects on 20+ standardized KPIs across 7 international teams.</li>
+        <li>Surfaced sales and operational gaps that shaped a four-business-unit restructuring roadmap for a $50B portfolio.</li>
+        <li>Validated project management workflows across 4 pilots, cutting rework cycles 30% and reporting time 40%.</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span class="tag tag-neutral">SQL</span><span class="tag tag-neutral">ETL</span><span class="tag tag-neutral">Power BI</span><span class="tag tag-neutral">VBA</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="card-kicker">0002 · Work</span>
+      <h3 class="card-title" style="font-size:22px">Yahoo</h3>
+      <p style="margin:0;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:12.5px">Product Manager Intern, Product Strategy · Jun 2024 – Aug 2024</p>
+      <ul class="card-body" style="padding-left:18px">
+        <li>Synthesized 40 user interviews and 100 surveys into the insight that Gen-Z reads news through other people's perspectives rather than institutional publishers, redirecting the product bet.</li>
+        <li>Led a cross-functional team from idea to prototype on a social-native news MVP and secured executive approval to continue.</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px">
+        <span class="tag tag-neutral">Product strategy</span><span class="tag tag-neutral">User research</span><span class="tag tag-neutral">Prototyping</span>
+      </div>
+      <figure class="blueprint" style="margin:0 0 10px;overflow:visible">
+        <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <image-slot id="yahoo-ripple" shape="rect" fit="contain" placeholder="Ripple cover" src="assets/ripple-cover.png" style="width:100%;aspect-ratio:16/9"></image-slot>
+      </figure>
+      <a href="https://drive.google.com/drive/u/1/folders/1XBLp4nTXKy2qzEPRjKTcy7WhI9Om7rkp" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">Ripple — the MVP prototype ↗</a>
+    </div>
+
+    <div class="card">
+      <span class="card-kicker">0001 · Work</span>
+      <h3 class="card-title" style="font-size:22px">BP</h3>
+      <p style="margin:0;color:color-mix(in srgb, var(--color-text) 60%, transparent);font-size:12.5px">Business Operations Intern, Market Entry &amp; Renewable Energy · Jul 2023 – Aug 2023</p>
+      <ul class="card-body" style="padding-left:18px;max-width:70ch">
+        <li>Built internal tooling that improved milestone visibility for renewable energy teams across Taiwan and Singapore.</li>
+        <li>Established bp's presence in the new Taiwan market with UK headquarters, rebuilding the local site and opening university research partnerships in agrivoltaics.</li>
+      </ul>
+      <div style="display:flex;flex-wrap:wrap;gap:6px">
+        <span class="tag tag-neutral">Excel / VBA</span><span class="tag tag-neutral">Market entry</span>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+</x-dc>
+</body>
+</html>

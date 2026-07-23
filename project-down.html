@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/styles.css">
+  <script src="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/_ds_bundle.js"></script>
+  <script src="image-slot.js"></script>
+  <style>
+    body{margin:0}
+    a{color:var(--color-accent)}
+    a:hover{color:var(--color-accent-700)}
+  </style>
+</helmet>
+
+<nav class="nav" style="max-width:1200px;margin:0 auto;padding-inline:clamp(20px,5vw,72px)">
+  <span class="nav-brand">Morris Kuang</span>
+  <a href="index.html">Home</a>
+  <a href="Projects.dc.html" aria-current="page">Projects</a>
+  <a href="About.dc.html">About</a>
+  <a class="btn btn-primary" href="resume.pdf" style="margin-left:12px">Résumé</a>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) clamp(56px,7vw,96px)">
+
+  <p style="padding-top:clamp(28px,4vw,40px);margin:0 0 20px"><a href="Projects.dc.html" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none">← All projects</a></p>
+
+  <section style="padding-bottom:clamp(28px,4vw,40px)">
+    <span class="tag tag-accent">Project · 0006</span>
+    <h1 style="font-size:clamp(38px,6vw,72px);line-height:1.0;letter-spacing:-0.01em;text-transform:uppercase;margin:18px 0 16px">Down</h1>
+    <p style="font-size:17px;max-width:64ch;color:color-mix(in srgb, var(--color-text) 78%, transparent);margin:0 0 24px">A group scheduling app where an LLM reads calendar screenshots and plain language into structured availability, so a group lands on a time without a reply-all thread.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+      <span class="tag tag-neutral">Next.js 14</span><span class="tag tag-neutral">Supabase</span><span class="tag tag-neutral">Vercel</span><span class="tag tag-neutral">LLM APIs</span>
+    </div>
+    <a href="https://github.com/Morris-Kuang/Down" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">GitHub ↗</a>
+  </section>
+
+  <section class="blueprint" style="overflow:visible;margin-bottom:clamp(36px,5vw,56px)">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;flex-wrap:wrap;border-bottom:1px solid var(--color-divider)">
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;flex:1;min-width:16ch">Down — launch data</span>
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-left:1px solid var(--color-divider);color:color-mix(in srgb, var(--color-text) 70%, transparent)">Role: Founder</span>
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-left:1px solid var(--color-divider);color:color-mix(in srgb, var(--color-text) 70%, transparent)">Jul 2026 – Present</span>
+    </div>
+    <table class="table" style="margin:0">
+      <thead><tr><th scope="col">No.</th><th scope="col">Metric</th><th scope="col">Value</th><th scope="col">Remark</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>Organic visitors, week one</td><td style="font-family:var(--font-heading);font-weight:600;font-size:18px">70+</td><td>No paid acquisition</td></tr>
+        <tr><td>02</td><td>Reached the event-creation flow</td><td style="font-family:var(--font-heading);font-weight:600;font-size:18px">&gt;50%</td><td>Of week-one visitors</td></tr>
+        <tr><td>03</td><td>Integration roadmap</td><td style="font-family:var(--font-heading);font-weight:600;font-size:18px">Google Calendar</td><td>Led by user interviews</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,40px);padding-bottom:clamp(36px,5vw,56px)">
+    <div>
+      <span class="tag tag-accent-2" style="margin-bottom:14px">The problem</span>
+      <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">Scheduling a group is a coordination tax</h2>
+      <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0">Every group event starts the same way: someone screenshots their calendar, someone else types out "I'm free Tues after 6," and a thread spends three days converging on a time a poll could have found in three minutes. The friction isn't the poll — it's translating everyone's actual availability into a format a poll can use.</p>
+    </div>
+    <div>
+      <span class="tag tag-accent-2" style="margin-bottom:14px">The approach</span>
+      <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">Let people show up as they are</h2>
+      <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0">Down accepts a calendar screenshot or a sentence like "free after 6 except Thursday" and an LLM turns either into structured availability. The app proposes times from the overlap, but the group makes the final call — it removes the busywork of collecting availability, not the decision itself.</p>
+    </div>
+  </section>
+
+  <figure class="blueprint duotone" style="margin:0 0 clamp(36px,5vw,56px);aspect-ratio:16/8;overflow:visible">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <image-slot id="down-screenshot" shape="rect" placeholder="Product screenshot of Down" style="width:100%;height:100%"></image-slot>
+  </figure>
+
+  <section style="padding-bottom:clamp(40px,6vw,64px)">
+    <span class="tag tag-accent-2" style="margin-bottom:14px">What's next</span>
+    <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">Google Calendar, then the rest of the stack</h2>
+    <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);max-width:70ch;margin:0">Interviews from the first cohort of users pointed at one integration above all others: pulling availability straight from Google Calendar instead of a screenshot. That's the next build — followed by the other calendar providers people actually use.</p>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0 0;border-top:1px solid var(--color-divider)">
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px">
+      <a class="btn btn-primary" href="mailto:cwkuang@engineering.upenn.edu">Email me</a>
+      <a class="btn btn-secondary" href="project-streamlens.html">Next project: StreamLens →</a>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--color-divider);padding-top:18px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent)">
+      <span>© 2026 Morris Kuang</span>
+      <span>Barlow Condensed · Barlow</span>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/styles.css">
+  <script src="_ds/industry-6bb12425-819b-4566-81ac-a3c3b26434ac/_ds_bundle.js"></script>
+  <script src="image-slot.js"></script>
+  <style>
+    body{margin:0}
+    a{color:var(--color-accent)}
+    a:hover{color:var(--color-accent-700)}
+  </style>
+</helmet>
+
+<nav class="nav" style="max-width:1200px;margin:0 auto;padding-inline:clamp(20px,5vw,72px)">
+  <span class="nav-brand">Morris Kuang</span>
+  <a href="index.html">Home</a>
+  <a href="Projects.dc.html" aria-current="page">Projects</a>
+  <a href="About.dc.html">About</a>
+  <a class="btn btn-primary" href="resume.pdf" style="margin-left:12px">Résumé</a>
+</nav>
+
+<div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,72px) clamp(56px,7vw,96px)">
+
+  <p style="padding-top:clamp(28px,4vw,40px);margin:0 0 20px"><a href="Projects.dc.html" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none">← All projects</a></p>
+
+  <section style="padding-bottom:clamp(28px,4vw,40px)">
+    <span class="tag tag-accent">Project · 0005</span>
+    <h1 style="font-size:clamp(38px,6vw,72px);line-height:1.0;letter-spacing:-0.01em;text-transform:uppercase;margin:18px 0 16px">StreamLens</h1>
+    <p style="font-size:17px;max-width:64ch;color:color-mix(in srgb, var(--color-text) 78%, transparent);margin:0 0 24px">A real-time pipeline that ingests live GitHub events, serves them for analysis as they arrive, and diagnoses its own anomalies with an agentic RAG loop — while keeping a human in charge of the ticket.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px">
+      <span class="tag tag-neutral">Python</span><span class="tag tag-neutral">Kafka</span><span class="tag tag-neutral">DuckDB</span><span class="tag tag-neutral">Parquet</span><span class="tag tag-neutral">PyArrow</span><span class="tag tag-neutral">RAG</span>
+    </div>
+    <a href="https://github.com/Morris-Kuang/GitHub-real-time-query-engine-over-live-data-streams" target="_blank" rel="noopener" style="font-family:var(--font-heading);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none">GitHub ↗</a>
+  </section>
+
+  <section class="blueprint" style="overflow:visible;margin-bottom:clamp(36px,5vw,56px)">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div style="display:flex;flex-wrap:wrap;border-bottom:1px solid var(--color-divider)">
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;flex:1;min-width:16ch">StreamLens — pipeline stages</span>
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-left:1px solid var(--color-divider);color:color-mix(in srgb, var(--color-text) 70%, transparent)">Role: Creator</span>
+      <span style="padding:10px 18px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;border-left:1px solid var(--color-divider);color:color-mix(in srgb, var(--color-text) 70%, transparent)">May 2026 – Present</span>
+    </div>
+    <table class="table" style="margin:0">
+      <thead><tr><th scope="col">No.</th><th scope="col">Stage</th><th scope="col">What it does</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>Ingest</td><td>Kafka consumes live GitHub events off the wire</td></tr>
+        <tr><td>02</td><td>Land</td><td>PyArrow writes events to Parquet as they arrive</td></tr>
+        <tr><td>03</td><td>Query</td><td>DuckDB serves analytical queries over the continuously-arriving data</td></tr>
+        <tr><td>04</td><td>Detect</td><td>An anomaly in the stream triggers the diagnosis loop</td></tr>
+        <tr><td>05</td><td>Diagnose</td><td>RAG retrieval over DuckDB vector search feeds an LLM that ranks root-cause hypotheses with confidence labels</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,40px);padding-bottom:clamp(36px,5vw,56px)">
+    <div>
+      <span class="tag tag-accent-2" style="margin-bottom:14px">The problem</span>
+      <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">Streams tell you what, not why</h2>
+      <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0">Most event pipelines stop at "the number moved." Someone still has to notice the anomaly, remember a similar incident, and write up a hypothesis by hand — usually after the fact, from a dashboard that only shows the symptom.</p>
+    </div>
+    <div>
+      <span class="tag tag-accent-2" style="margin-bottom:14px">The approach</span>
+      <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">A diagnosis loop, with a human veto</h2>
+      <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0">When a metric like push rate deviates, the system retrieves similar past incidents from DuckDB's vector index and has an LLM rank hypotheses by confidence. Auto-ticketing stays deferred on purpose: it keeps a human reviewing the call, and keeps LLM cost and failure modes bounded.</p>
+    </div>
+  </section>
+
+  <figure class="blueprint duotone" style="margin:0 0 clamp(36px,5vw,56px);aspect-ratio:16/8;overflow:visible">
+    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <image-slot id="streamlens-screenshot" shape="rect" placeholder="Dashboard or architecture screenshot" style="width:100%;height:100%"></image-slot>
+  </figure>
+
+  <section style="padding-bottom:clamp(40px,6vw,64px)">
+    <span class="tag tag-accent-2" style="margin-bottom:14px">Guardrail</span>
+    <h2 style="font-size:22px;margin:14px 0 10px;text-transform:uppercase">Deferred by design</h2>
+    <p style="line-height:1.6;color:color-mix(in srgb, var(--color-text) 80%, transparent);max-width:70ch;margin:0">The tempting next step is to let the agent open the ticket itself. StreamLens holds that back deliberately — a ranked hypothesis is cheap to generate and easy to get wrong, so a human stays the one who acts on it.</p>
+  </section>
+
+  <section style="padding:clamp(36px,5vw,56px) 0 0;border-top:1px solid var(--color-divider)">
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px">
+      <a class="btn btn-primary" href="mailto:cwkuang@engineering.upenn.edu">Email me</a>
+      <a class="btn btn-secondary" href="project-down.html">Previous project: Down →</a>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--color-divider);padding-top:18px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 60%, transparent)">
+      <span>© 2026 Morris Kuang</span>
+      <span>Barlow Condensed · Barlow</span>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+</body>
+</html>
